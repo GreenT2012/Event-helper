@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel rel="stylesheet" href="lib/montserrat/webfonts/Montserrat.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">VA-Helfer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Rechner
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Abstandsrechner</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <h1 class="heading">Trussrechner</h1>
+    <form>
+        <div class="content_wraper">
+            <div class="col1">
+                <label for="trussLength">Gebe die länge der Traverse ein (in meter)</label>
+
+                <input id="trussLength" class="form-control" type="text" name="trussLength" placeholder="0 m">
+            </div>
+            <div class="col2">
+                <label for="numOfLamps">Gebe die Anzahl der Lampen ein</label>
+                <input id="numOfLamps" class="form-control" type="text" name="numOfLamps" placeholder="0 stk.">
+            </div>
+
+        </div>
+        <div class="start-end_wraper">
+            <div class="col1">
+                <label for="firstLamp">Abstand zur ersten Lampe (Traversenanfang)</label>
+                <input id="firstLamp" class="form-control" type="text" name="firstLamp" placeholder="0 m">
+            </div>
+            <div class="col2">
+                <label for="lastLamp" class="form-label">Abstand der letzten Lampe (Traversenende)</label>
+                <input id="lastLamp" class="form-control" type="text" name="lastLamp" placeholder="0 m">
+            </div>
+
+        </div>
+        <div class="button_wraper">
+            <button id="submit" class="btn btn-primary" type="button" onclick="trussBetween()">Ausrechnen</button>
+        </div>
+        <p id="result">
+            0 m
+        </p>
+    </form>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/bootstrap.js"></script>
+</body>
+
+</html>
