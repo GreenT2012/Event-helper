@@ -1,6 +1,5 @@
-Va-Helfer
+Event-Helper
 
 
-Eine App mit verschiedenen Rechnern und sonstigen kleinen Helfern um dir in der Veranstaltungsbranche zu helfen. 
+today i coded my first little project with javascript from scratch. it is a calculator for electrical parameters and the truss calculation shows the even distance between devices in the event industry.
 
-Ein kleines Projekt um miene Javascript kenntnisse zu erweitern. 
